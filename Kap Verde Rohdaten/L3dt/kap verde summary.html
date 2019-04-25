@@ -33,6 +33,7 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
 <tr><td class = "td_mapinfoitem">Definition file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde.def.xml">kap verde.def.xml</a></td></tr>
 <tr><td class = "td_mapinfoitem">Project directory:</td><td class = "td_mapinfoitem2">P:\Map\Kap Verde Rohdaten\L3dt</td></tr>
 <tr><td class = "td_mapinfoitem">Terrain size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Texture size:</td><td class = "td_mapinfoitem2">4352 &times; 4352</td></tr>
 <tr><td class = "td_mapinfoitem">Wrap flag:</td><td class = "td_mapinfoitem2">true</td></tr>
 </table>
 
@@ -44,8 +45,20 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
   <li><a class = "link_intern" href = "#map_DM">Design map</a></li>
   <li><a class = "link_intern" href = "#map_HF">Heightfield</a></li>
   <li><a class = "link_intern" href = "#map_WM">Water map</a></li>
+  <li><a class = "link_intern" href = "#map_WS">Salinity map</a></li>
   <li><a class = "link_intern" href = "#map_AM">Attributes map</a></li>
   <li><a class = "link_intern" href = "#map_TN">Terrain normals</a></li>
+  <li><a class = "link_intern" href = "#map_SH">Shadow map</a></li>
+  <li><a class = "link_intern" href = "#map_LM">Light map</a></li>
+  <li><a class = "link_intern" href = "#map_SpecLM">Specular light map</a></li>
+  <li><a class = "link_intern" href = "#map_TX">Texture map</a></li>
+  <li><a class = "link_intern" href = "#map_Alpha_1">Alpha_1</a></li>
+  <li><a class = "link_intern" href = "#map_Alpha_2">Alpha_2</a></li>
+  <li><a class = "link_intern" href = "#map_Alpha_3">Alpha_3</a></li>
+  <li><a class = "link_intern" href = "#map_Mask1_AltitudeThreshold">Mask1_AltitudeThreshold</a></li>
+  <li><a class = "link_intern" href = "#map_Mask2_grass">Mask2_grass</a></li>
+  <li><a class = "link_intern" href = "#map_Mask3_grass2">Mask3_grass2</a></li>
+  <li><a class = "link_intern" href = "#map_Mask4_TraversableSlope">Mask4_TraversableSlope</a></li>
   </ul></li>
 <li>Settings and flags
   <ul>
@@ -55,6 +68,8 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
   <li><a class = "link_intern" href = "#settings_WM">Water map settings</a></li>
   <li><a class = "link_intern" href = "#settings_AM">Attributes map settings</a></li>
   <li><a class = "link_intern" href = "#settings_TN">Terrain normals settings</a></li>
+  <li><a class = "link_intern" href = "#settings_LM">Light map settings</a></li>
+  <li><a class = "link_intern" href = "#settings_TX">Texture map settings</a></li>
   <li><a class = "link_intern" href = "#settings_Alpha">Alpha map settings</a></li>
   </ul></li>
 </ul>
@@ -64,8 +79,8 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
 <h3 id = "map_DM">Design map</h3>
 <table class = "font1">
 <tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">68 &times; 68</td></tr>
-<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">1.00m</td></tr>
-<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">910...1635m</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">365.63m</td></tr>
+<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">-330...725m</td></tr>
 <tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_DM.dmf">kap verde_DM.dmf</a></td></tr>
 <tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">dmf</td></tr>
 </table>
@@ -74,7 +89,7 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
 <table class = "font1">
 <tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
 <tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
-<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">0...905.5m</td></tr>
+<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">-331.6...905.5m</td></tr>
 <tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_HF.hfz">kap verde_HF.hfz</a></td></tr>
 <tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">hfz</td></tr>
 </table>
@@ -83,9 +98,18 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
 <table class = "font1">
 <tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
 <tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
-<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">-100...805.5m</td></tr>
+<tr><td class = "td_mapinfoitem">Vert. range:</td><td class = "td_mapinfoitem2">9.184e-040...805.5m</td></tr>
 <tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_WM.wmf">kap verde_WM.wmf</a></td></tr>
 <tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">wmf</td></tr>
+</table>
+
+<h3 id = "map_WS">Salinity map</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Salin. range:</td><td class = "td_mapinfoitem2">17.6...100%</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_WS.hfz">kap verde_WS.hfz</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">hfz</td></tr>
 </table>
 
 <h3 id = "map_AM">Attributes map</h3>
@@ -106,23 +130,137 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
 <h4>Preview:</h4>
 <a href = "kap verde_TN.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_TN.png" alt = "[kap verde_TN.png]"/></a>
 
+<h3 id = "map_SH">Shadow map</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_SH.png">kap verde_SH.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_SH.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_SH.png" alt = "[kap verde_SH.png]"/></a>
+
+<h3 id = "map_LM">Light map</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_LM.jpg">kap verde_LM.jpg</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">jpg</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_LM.jpg"><img class = "img_thumbnail" height = "256px" src = "kap verde_LM.jpg" alt = "[kap verde_LM.jpg]"/></a>
+
+<h3 id = "map_SpecLM">Specular light map</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_SpecLM.png">kap verde_SpecLM.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_SpecLM.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_SpecLM.png" alt = "[kap verde_SpecLM.png]"/></a>
+
+<h3 id = "map_TX">Texture map</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">4352 &times; 4352</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">5.71m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_TX.jpg">kap verde_TX.jpg</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">jpg</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_TX.jpg"><img class = "img_thumbnail" height = "256px" src = "kap verde_TX.jpg" alt = "[kap verde_TX.jpg]"/></a>
+
+<h3 id = "map_Alpha_1">Alpha_1</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Alpha_1.png">kap verde_Alpha_1.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Alpha_1.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Alpha_1.png" alt = "[kap verde_Alpha_1.png]"/></a>
+
+<h3 id = "map_Alpha_2">Alpha_2</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Alpha_2.png">kap verde_Alpha_2.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Alpha_2.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Alpha_2.png" alt = "[kap verde_Alpha_2.png]"/></a>
+
+<h3 id = "map_Alpha_3">Alpha_3</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Alpha_3.png">kap verde_Alpha_3.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Alpha_3.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Alpha_3.png" alt = "[kap verde_Alpha_3.png]"/></a>
+
+<h3 id = "map_Mask1_AltitudeThreshold">Mask1_AltitudeThreshold</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Mask1_AltitudeThreshold.png">kap verde_Mask1_AltitudeThreshold.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Mask1_AltitudeThreshold.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Mask1_AltitudeThreshold.png" alt = "[kap verde_Mask1_AltitudeThreshold.png]"/></a>
+
+<h3 id = "map_Mask2_grass">Mask2_grass</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Mask2_grass.png">kap verde_Mask2_grass.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Mask2_grass.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Mask2_grass.png" alt = "[kap verde_Mask2_grass.png]"/></a>
+
+<h3 id = "map_Mask3_grass2">Mask3_grass2</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Mask3_grass2.png">kap verde_Mask3_grass2.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Mask3_grass2.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Mask3_grass2.png" alt = "[kap verde_Mask3_grass2.png]"/></a>
+
+<h3 id = "map_Mask4_TraversableSlope">Mask4_TraversableSlope</h3>
+<table class = "font1">
+<tr><td class = "td_mapinfoitem">Map size:</td><td class = "td_mapinfoitem2">1088 &times; 1088</td></tr>
+<tr><td class = "td_mapinfoitem">Horiz. scale:</td><td class = "td_mapinfoitem2">22.85m</td></tr>
+<tr><td class = "td_mapinfoitem">Map file:</td><td class = "td_mapinfoitem2"><a class = "link_file" href = "kap verde_Mask4_TraversableSlope.png">kap verde_Mask4_TraversableSlope.png</a></td></tr>
+<tr><td class = "td_mapinfoitem">File type:</td><td class = "td_mapinfoitem2">png</td></tr>
+</table>
+<h4>Preview:</h4>
+<a href = "kap verde_Mask4_TraversableSlope.png"><img class = "img_thumbnail" height = "256px" src = "kap verde_Mask4_TraversableSlope.png" alt = "[kap verde_Mask4_TraversableSlope.png]"/></a>
+
 <h2 id = "settings">Settings and flags</h2>
 <ul class = "font1">
 <li id = "settings_ops"><h3>Operations</h3>
   <ul>
-  <li>FloodSea</li>
-  <li>WaterTable</li>
   <li>FloodAll</li>
+  <li>FloodSea</li>
+  <li>FloodLakes</li>
+  <li>WaterTable</li>
   <li>GenAM</li>
   <li>GenTN</li>
+  <li>GenLM</li>
+  <li>GenTX</li>
+  <li>GenAlpha</li>
   </ul></li>
 <li id = "settings_DM"><h3>Design map settings</h3>
   <ul>
-  <li>FracRough [int] = 50</li>
-  <li>PeakRough [int] = 50</li>
+  <li>FracRough [int] = 21</li>
+  <li>PeakRough [int] = 79</li>
   <li>Cliffs [int] = 33</li>
   <li>Erosion [int] = 5</li>
-  <li>Lakes [int] = 7</li>
+  <li>Lakes [int] = 47</li>
   <li>Climate [string] = Temperate</li>
   <li>nx [int] = 68</li>
   <li>ny [int] = 68</li>
@@ -143,10 +281,10 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
     <ul>
     <li>ClearFlag [bool] = true</li>
     <li>WplaneFlag [bool] = true</li>
-    <li>WplaneLevel [float] = 0</li>
+    <li>WplaneLevel [float] = 30</li>
     <li>WplaneType [int] = 0</li>
     <li>SeaFlag [bool] = true</li>
-    <li>LakesFlag [bool] = false</li>
+    <li>LakesFlag [bool] = true</li>
     <li>WtableFlag [bool] = true</li>
     </ul></li>
   <li>Wtable [varlist]
@@ -172,6 +310,32 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
     </ul></li>
   <li>WaterBodyList [varlist]
     <ul>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
+    <li> [WaterBody]</li>
     </ul></li>
   </ul></li>
 <li id = "settings_AM"><h3>Attributes map settings</h3>
@@ -182,14 +346,135 @@ td.td_mapinfoitem2  { padding-left: 5px; padding-right:5px; padding-top:2px; pad
   </ul></li>
 <li id = "settings_TN"><h3>Terrain normals settings</h3>
   <ul>
-  <li>BumpMapping [bool] = false</li>
+  <li>BumpMapping [bool] = true</li>
   <li>TangentFlag [bool] = false</li>
   <li>TN_in_HF [int] = 1</li>
   <li>MosaicFlag [bool] = false</li>
   </ul></li>
+<li id = "settings_LM"><h3>Light map settings</h3>
+  <ul>
+  <li>Sun [colour] = 255, 244, 222</li>
+  <li>Amb [colour] = 98, 192, 255</li>
+  <li>Spec [colour] = 255, 255, 255</li>
+  <li>Azim [float] = -45</li>
+  <li>Elev [float] = 45</li>
+  <li>Brightness [float] = 1</li>
+  <li>SunAmbRatio [float] = 0.8</li>
+  <li>UseWM [bool] = true</li>
+  <li>ShadowFlag [bool] = true</li>
+  <li>SpecularFlag [bool] = true</li>
+  <li>RecalcShadowFlag [bool] = false</li>
+  <li>BumpMapping [bool] = true</li>
+  <li>MosaicFlag [bool] = false</li>
+  <li>LM_in_HF [int] = 1</li>
+  <li>AbsRGB [vector3f] = 10.000000, 20.000000, 50.000000</li>
+  <li>DoFresnel [bool] = true</li>
+  <li>DefaultTx [float] = 1</li>
+  </ul></li>
+<li id = "settings_TX"><h3>Texture map settings</h3>
+  <ul>
+  <li>UseLM [bool] = true</li>
+  <li>UseTX [bool] = true</li>
+  <li>UseStrata [bool] = true</li>
+  <li>TX_in_HF [int] = 4</li>
+  <li>MosaicFlag [bool] = false</li>
+  <li>MosaicSize [int] = 512</li>
+  <li>MaxRadAA [int] = 8</li>
+  </ul></li>
 <li id = "settings_alpha"><h3>Alpha map settings</h3>
   <ul>
   <li>TypeListIsDirty [bool] = false</li>
+  <li>MosaicFlag [bool] = false</li>
+  <li>FileExt [string] = png</li>
+  <li>nAlphasPerImage [int] = 4</li>
+  <li>HiResRatio [int] = 1</li>
+  <li>MaxRadiusAA [int] = 4</li>
+  <li>ImageCount [int] = 3</li>
+  <li>LayerCount [int] = 9</li>
+  <li>Images [varlist]
+    <ul>
+    <li>Alpha_1 [varlist]
+      <ul>
+      <li>Layer 1 [varlist]
+        <ul>
+        <li>LayerColour [string] = red</li>
+        <li>MtlName [string] = std_sand_yellow</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\sand\yellowsand1.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\ground\006terresable_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\sand\yellowsand1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 2 [varlist]
+        <ul>
+        <li>LayerColour [string] = green</li>
+        <li>MtlName [string] = std_pebbles</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\ground\rocks1-grey.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\ground\rocks1_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\ground\rocks1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 3 [varlist]
+        <ul>
+        <li>LayerColour [string] = blue</li>
+        <li>MtlName [string] = std_cliffs_grey</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 4 [varlist]
+        <ul>
+        <li>LayerColour [string] = alpha</li>
+        <li>MtlName [string] = std_cliffs</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1b.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_t3d_detail.jpg</li>
+        </ul></li>
+      </ul></li>
+    <li>Alpha_2 [varlist]
+      <ul>
+      <li>Layer 1 [varlist]
+        <ul>
+        <li>LayerColour [string] = red</li>
+        <li>MtlName [string] = std_grass_lush</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1-lush.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\detail\detailmap_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 2 [varlist]
+        <ul>
+        <li>LayerColour [string] = green</li>
+        <li>MtlName [string] = std_grass_steep</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\detail\detailmap_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 3 [varlist]
+        <ul>
+        <li>LayerColour [string] = blue</li>
+        <li>MtlName [string] = std_grass</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\detail\detailmap_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1_t3d_detail.jpg</li>
+        </ul></li>
+      <li>Layer 4 [varlist]
+        <ul>
+        <li>LayerColour [string] = alpha</li>
+        <li>MtlName [string] = std_cliffs_steep</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\rock\rock1_t3d_detail.jpg</li>
+        </ul></li>
+      </ul></li>
+    <li>Alpha_3 [varlist]
+      <ul>
+      <li>Layer 1 [varlist]
+        <ul>
+        <li>LayerColour [string] = red</li>
+        <li>MtlName [string] = std_grass_dry</li>
+        <li>TexFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1-dry.jpg</li>
+        <li>NormFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\detail\detailmap_bump.jpg</li>
+        <li>DetailFile [string] = C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\common\grass\grass1_t3d_detail.jpg</li>
+        </ul></li>
+      </ul></li>
+    </ul></li>
   </ul></li>
 </ul>
 </body>

@@ -1,0 +1,16 @@
+L3DT Mosaic master file
+#MosaicName:	Mip8
+#MosaicType:	HF
+#FileExt:	hfz
+#nPxlsX:	136
+#nPxlsY:	136
+#nMapsX:	1
+#nMapsY:	1
+#SubMapSize:	512
+#HorizScale:	182.816177
+#WrapFlag:	TRUE
+#UnifiedScale:	TRUE
+#GlobalMinAlt:	-331.648468
+#GlobalMaxAlt:	905.505371
+#TileState:	0	OK
+#EOF
