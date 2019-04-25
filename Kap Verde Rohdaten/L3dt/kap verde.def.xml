@@ -91,5 +91,8 @@
 		<int name="TN_in_HF">1</int>
 		<bool name="MosaicFlag">false</bool>
 	</varlist>
+	<varlist name="Alpha">
+		<bool name="TypeListIsDirty">false</bool>
+	</varlist>
 	<int name="SettingsVersion">2540</int>
 </varlist>

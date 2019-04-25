@@ -37,5 +37,8 @@
 		<varlist name="Temperate">
 			<string name="Filename">C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\temperate26\Temperate26.cli.xml</string>
 		</varlist>
+		<varlist name="Tropical">
+			<string name="Filename">C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\tropical26\tropical26.cli.xml</string>
+		</varlist>
 	</varlist>
 </varlist>
