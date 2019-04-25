@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<varlist name="ProjectData">
+	<int name="FileVersion">1</int>
+	<varlist name="MapInfo">
+		<varlist name="Terrain">
+			<int name="nx">1088</int>
+			<int name="ny">1088</int>
+			<float name="MinAlt">0</float>
+			<float name="MaxAlt">905.505</float>
+			<float name="HorizScale">22.852</float>
+		</varlist>
+		<bool name="WrapFlag">true</bool>
+	</varlist>
+	<varlist name="Maps">
+		<varlist name="DM">
+			<string name="Filename">kap verde_DM.dmf</string>
+			<string name="MapType">DM</string>
+		</varlist>
+		<varlist name="HF">
+			<string name="Filename">kap verde_HF.hfz</string>
+			<string name="MapType">HF</string>
+		</varlist>
+		<varlist name="WM">
+			<string name="Filename">kap verde_WM.wmf</string>
+			<string name="MapType">WM</string>
+		</varlist>
+		<varlist name="AM">
+			<string name="Filename">kap verde_AM.amf.gz</string>
+			<string name="MapType">AM</string>
+		</varlist>
+		<varlist name="TN">
+			<string name="Filename">kap verde_TN.png</string>
+			<string name="MapType">TN</string>
+		</varlist>
+	</varlist>
+	<varlist name="Climates">
+		<varlist name="Temperate">
+			<string name="Filename">C:\Users\Tr4cid\L3DT\Resources\Pro 16.05.3.1 x64\Climates\temperate26\Temperate26.cli.xml</string>
+		</varlist>
+	</varlist>
+</varlist>
