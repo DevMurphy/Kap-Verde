@@ -14,4 +14,4 @@ UTM Easting 703829.11
 UTM Northing 1850732.31
 26Q
 
-1024 x 1024 Cell 22.9 m/px
+1024 x 1024 Cell 24.280273 m/px
