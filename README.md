@@ -13,3 +13,5 @@ https://www.latlong.net/c/?lat=16.730600&long=-25.088100
 UTM Easting 703829.11
 UTM Northing 1850732.31
 26Q
+
+1024 x 1024 Cell 22.9 m/px
